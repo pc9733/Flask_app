@@ -11,7 +11,7 @@ COPY ./python_code /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port on which the Flask app runs
-EXPOSE 5000
+EXPOSE 80
 
 # Command to run the application
 CMD ["python", "flask_app.py"]
